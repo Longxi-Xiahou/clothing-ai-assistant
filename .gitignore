@@ -1,0 +1,34 @@
+.env
+.env.*
+!.env.example
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+logs/*
+!logs/.gitkeep
+
+.cache/
+
+# Local database backups
+backups/
+
+# Local datasets and generated data
+data/raw/
+data/processed/
+
+# Temporary backup files
+*.bak
+*.bak-*
+*.bak.*
+*.backup-*
+*.before-*
+
+# Python and test caches
+.pytest_cache/
+
+# Additional temporary backup files
+*.bak_*
+*.backup_*
