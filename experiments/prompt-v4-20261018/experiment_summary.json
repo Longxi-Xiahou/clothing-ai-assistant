@@ -1,0 +1,30 @@
+{
+  "created_at_utc": "2026-10-18T04:17:19.881730+00:00",
+  "status": "best prompt candidate; development-set result only",
+  "development_cases": 10,
+  "v3_exact_match": "6/10",
+  "v4_exact_match": "9/10",
+  "v4_1_exact_match": "10/10",
+  "files": {
+    "prompt_v3_baseline.txt": {
+      "sha256": "a5a425594b5eca8ac78e4191c0fb685fad1e2496fddce05d1f87805d94db9058",
+      "bytes": 3243
+    },
+    "prompt_v4.txt": {
+      "sha256": "dc3dd3d2c8bf5abe2d21c2af9a923fb070d055f5887981be7fbabd47f40047df",
+      "bytes": 5340
+    },
+    "prompt_v4_1.txt": {
+      "sha256": "513f8b616e3c5864c057ac8d493fbe63e94a8c3c4b459b25642927390bb8b128",
+      "bytes": 5708
+    },
+    "results_v3.jsonl": {
+      "sha256": "6774e255f27b9fe66bea098b39d6f06b533afc5aac03d5b4f4a379f9f7e358d1",
+      "bytes": 4831
+    },
+    "results_v4_1.jsonl": {
+      "sha256": "b54da3ace2d795a5c9f3c34989971366315efd790070b76b6d2b6f49f0057f51",
+      "bytes": 4555
+    }
+  }
+}

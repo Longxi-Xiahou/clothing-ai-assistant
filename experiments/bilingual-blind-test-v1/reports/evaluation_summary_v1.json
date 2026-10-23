@@ -1,0 +1,99 @@
+{
+  "dataset": "experiments/bilingual-blind-test-v1/cases/blind_test_v1.jsonl",
+  "total": 200,
+  "exact_match": {
+    "correct": 136,
+    "total": 200,
+    "accuracy": 0.68
+  },
+  "field_accuracy": {
+    "intent": {
+      "correct": 174,
+      "total": 200,
+      "accuracy": 0.87
+    },
+    "action": {
+      "correct": 167,
+      "total": 200,
+      "accuracy": 0.835
+    },
+    "category": {
+      "correct": 164,
+      "total": 200,
+      "accuracy": 0.82
+    },
+    "color": {
+      "correct": 165,
+      "total": 200,
+      "accuracy": 0.825
+    },
+    "min_price": {
+      "correct": 164,
+      "total": 200,
+      "accuracy": 0.82
+    },
+    "max_price": {
+      "correct": 160,
+      "total": 200,
+      "accuracy": 0.8
+    },
+    "clear_filters": {
+      "correct": 172,
+      "total": 200,
+      "accuracy": 0.86
+    }
+  },
+  "by_language": {
+    "en": {
+      "correct": 74,
+      "total": 100,
+      "accuracy": 0.74,
+      "runtime_errors": 9
+    },
+    "zh": {
+      "correct": 62,
+      "total": 100,
+      "accuracy": 0.62,
+      "runtime_errors": 16
+    }
+  },
+  "by_group": {
+    "clear_filters": {
+      "correct": 15,
+      "total": 30,
+      "accuracy": 0.5,
+      "runtime_errors": 0
+    },
+    "colloquial_ambiguous": {
+      "correct": 18,
+      "total": 30,
+      "accuracy": 0.6,
+      "runtime_errors": 5
+    },
+    "conflict_boundary": {
+      "correct": 15,
+      "total": 30,
+      "accuracy": 0.5,
+      "runtime_errors": 9
+    },
+    "general": {
+      "correct": 30,
+      "total": 30,
+      "accuracy": 1.0,
+      "runtime_errors": 0
+    },
+    "modify_filters": {
+      "correct": 20,
+      "total": 40,
+      "accuracy": 0.5,
+      "runtime_errors": 11
+    },
+    "new_search": {
+      "correct": 38,
+      "total": 40,
+      "accuracy": 0.95,
+      "runtime_errors": 0
+    }
+  },
+  "runtime_errors": 25
+}

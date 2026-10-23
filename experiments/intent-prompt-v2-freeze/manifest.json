@@ -1,0 +1,42 @@
+{
+  "experiment": "intent-prompt-v2-freeze",
+  "created_at_utc": "2026-10-22T03:39:14.292716+00:00",
+  "status": "baseline_snapshot_created_holdout_not_yet_evaluated",
+  "prompt_sha256": "e5fe126d6094a0a38039a0bb48ccd9786f185e8929ebef9d01f279cf1cd76e5c",
+  "source_hashes": {
+    "prompt_snapshot": "e5fe126d6094a0a38039a0bb48ccd9786f185e8929ebef9d01f279cf1cd76e5c",
+    "classifier_source": "059d4f5a5afda05d97202651b3cab1c375a11f2a6e8ab184e289412ed4fa6a07",
+    "schema_source": "f25450ba9c7dcf5cd0cd1699d696ed0e6d865551d889cb314d28a18d7a0627b2",
+    "filter_merger_source": "43ff770f5a8177b68949c00537b616f9c9ba95c48972906087bf823f02ff3adf",
+    "chinese_development_set": "53d8dcba6f569f58c79d357f53b0b137ec65eb58346b3786b0adb3e548d4fa11",
+    "english_development_set": "fa5019191b7f956af498ec00783365e484dd69e454f76842f8c2bf5bf352d94e",
+    "combined_development_set": "9e3eed7d739abcea4d7a7aebd8741dbe84f0e11babc913b89350538991e6e70d"
+  },
+  "development_dataset": {
+    "path": "experiments/bilingual-blind-test-v1/cases/blind_test_v1.jsonl",
+    "cases": 200,
+    "chinese_cases": 100,
+    "english_cases": 100,
+    "role": "development_set_not_independent_holdout"
+  },
+  "v2_diagnostic": {
+    "cases": 200,
+    "schema_valid": 188,
+    "schema_invalid": 12,
+    "schema_valid_rate": 0.94,
+    "note": "Schema validity is not exact-match accuracy or generalization performance."
+  },
+  "runtime_configuration": {
+    "temperature": 0,
+    "max_tokens": 256,
+    "enable_thinking": false,
+    "model": "Qwen3-14B",
+    "timeout_seconds": 120.0,
+    "base_url_host": "127.0.0.1",
+    "base_url_port": 8102
+  },
+  "git": {
+    "commit": null,
+    "note": "Repository has no initial commit yet."
+  }
+}

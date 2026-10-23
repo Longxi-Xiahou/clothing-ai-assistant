@@ -1,0 +1,6 @@
+{
+  "source": "app/services/intent_classifier.py",
+  "baseline_prompt": "experiments/prompt-v4-20261018/prompt_v3_baseline.txt",
+  "sha256": "43cf1b1b7257efca31fe42aa4e19b89b18e3cc53322d323f59904a0cf70310ef",
+  "status": "baseline snapshot; production code unchanged"
+}

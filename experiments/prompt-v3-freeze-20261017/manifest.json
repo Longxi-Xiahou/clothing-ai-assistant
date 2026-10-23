@@ -1,0 +1,14 @@
+{
+  "version": "prompt-v3",
+  "created_at_utc": "2026-10-17T23:33:06.740369+00:00",
+  "prompt_sha256": "d66123ab42a11632ba260d5f82ba11cc802fba514b1f43494e90dc305fbc8aa6",
+  "development_cases": 20,
+  "development_exact_matches": 20,
+  "development_exact_match_rate": 1.0,
+  "purpose": "Freeze the current prompt before evaluating unseen challenge cases.",
+  "protocol": {
+    "do_not_tune_on_challenge_set": true,
+    "keep_dialogue_turns_in_one_split": true,
+    "final_test_must_remain_untouched_during_tuning": true
+  }
+}

@@ -1,0 +1,3 @@
+Records: 100
+Groups: {'general': 15, 'new_search': 20, 'modify_filters': 20, 'clear_filters': 15, 'ambiguous': 15, 'conflict_boundary': 15}
+Semantic audit flags: 0
