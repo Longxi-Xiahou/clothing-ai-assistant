@@ -1,0 +1,1559 @@
+[
+  {
+    "sku": "TSHIRT-DEMO-002",
+    "name": "Green Cotton T-Shirt 002",
+    "description": "A sporty green T恤 made with cotton-blend fabric, designed for everyday wear.",
+    "category": "T-Shirts",
+    "brand": "Demo Brand",
+    "price": "27.25",
+    "currency": "USD",
+    "stock": 12,
+    "attributes": {
+      "color": "green",
+      "sizes": [
+        "L",
+        "XL"
+      ],
+      "material": "cotton-blend",
+      "style": [
+        "sporty"
+      ],
+      "name_zh": "绿色T恤（休闲款）",
+      "description_zh": "这款绿色T恤采用棉混纺材质，整体风格为运动，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "JEANS-DEMO-003",
+    "name": "White Denim Jeans 003",
+    "description": "A classic white 牛仔裤 made with denim fabric, designed for everyday wear.",
+    "category": "Jeans",
+    "brand": "Demo Brand",
+    "price": "51.38",
+    "currency": "USD",
+    "stock": 24,
+    "attributes": {
+      "color": "white",
+      "sizes": [
+        "34",
+        "36"
+      ],
+      "material": "denim",
+      "style": [
+        "classic"
+      ],
+      "name_zh": "白色牛仔裤（基础款）",
+      "description_zh": "这款白色牛仔裤采用牛仔布材质，整体风格为经典，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "HOODIE-DEMO-004",
+    "name": "Navy Pullover Hoodie 004",
+    "description": "A casual navy 连帽衫 made with linen fabric, designed for everyday wear.",
+    "category": "Hoodies",
+    "brand": "Demo Brand",
+    "price": "53.51",
+    "currency": "USD",
+    "stock": 35,
+    "attributes": {
+      "color": "navy",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "linen",
+      "style": [
+        "casual"
+      ],
+      "name_zh": "藏青色连帽衫（宽松款）",
+      "description_zh": "这款藏青色连帽衫采用亚麻材质，整体风格为休闲，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "SHIRT-DEMO-005",
+    "name": "Black Casual Shirt 005",
+    "description": "A minimalist black 衬衫 made with cotton fabric, designed for everyday wear.",
+    "category": "Shirts",
+    "brand": "Demo Brand",
+    "price": "55.64",
+    "currency": "USD",
+    "stock": 50,
+    "attributes": {
+      "color": "black",
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "cotton",
+      "style": [
+        "minimalist"
+      ],
+      "name_zh": "黑色衬衫（经典款）",
+      "description_zh": "这款黑色衬衫采用棉材质，整体风格为简约，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "JACKET-DEMO-006",
+    "name": "Gray Casual Jacket 006",
+    "description": "A sporty gray 夹克 made with polyester fabric, designed for everyday wear.",
+    "category": "Jackets",
+    "brand": "Demo Brand",
+    "price": "82.77",
+    "currency": "USD",
+    "stock": 80,
+    "attributes": {
+      "color": "gray",
+      "sizes": [
+        "L",
+        "XL"
+      ],
+      "material": "polyester",
+      "style": [
+        "sporty"
+      ],
+      "name_zh": "灰色夹克（休闲款）",
+      "description_zh": "这款灰色夹克采用聚酯纤维材质，整体风格为运动，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "TSHIRT-DEMO-007",
+    "name": "Green Cotton T-Shirt 007",
+    "description": "A classic green T恤 made with cotton fabric, designed for everyday wear.",
+    "category": "T-Shirts",
+    "brand": "Demo Brand",
+    "price": "18.90",
+    "currency": "USD",
+    "stock": 0,
+    "attributes": {
+      "color": "green",
+      "sizes": [
+        "XL"
+      ],
+      "material": "cotton",
+      "style": [
+        "classic"
+      ],
+      "name_zh": "绿色T恤（基础款）",
+      "description_zh": "这款绿色T恤采用棉材质，整体风格为经典，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "JEANS-DEMO-008",
+    "name": "White Denim Jeans 008",
+    "description": "A casual white 牛仔裤 made with polyester fabric, designed for everyday wear.",
+    "category": "Jeans",
+    "brand": "Demo Brand",
+    "price": "37.03",
+    "currency": "USD",
+    "stock": 5,
+    "attributes": {
+      "color": "white",
+      "sizes": [
+        "34",
+        "36"
+      ],
+      "material": "polyester",
+      "style": [
+        "casual"
+      ],
+      "name_zh": "白色牛仔裤（宽松款）",
+      "description_zh": "这款白色牛仔裤采用聚酯纤维材质，整体风格为休闲，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "HOODIE-DEMO-009",
+    "name": "Navy Pullover Hoodie 009",
+    "description": "A minimalist navy 连帽衫 made with cotton-blend fabric, designed for everyday wear.",
+    "category": "Hoodies",
+    "brand": "Demo Brand",
+    "price": "44.16",
+    "currency": "USD",
+    "stock": 12,
+    "attributes": {
+      "color": "navy",
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "cotton-blend",
+      "style": [
+        "minimalist"
+      ],
+      "name_zh": "藏青色连帽衫（经典款）",
+      "description_zh": "这款藏青色连帽衫采用棉混纺材质，整体风格为简约，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "SHIRT-DEMO-010",
+    "name": "Black Casual Shirt 010",
+    "description": "A sporty black 衬衫 made with denim fabric, designed for everyday wear.",
+    "category": "Shirts",
+    "brand": "Demo Brand",
+    "price": "51.29",
+    "currency": "USD",
+    "stock": 24,
+    "attributes": {
+      "color": "black",
+      "sizes": [
+        "L",
+        "XL"
+      ],
+      "material": "denim",
+      "style": [
+        "sporty"
+      ],
+      "name_zh": "黑色衬衫（休闲款）",
+      "description_zh": "这款黑色衬衫采用牛仔布材质，整体风格为运动，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "JACKET-DEMO-011",
+    "name": "Gray Casual Jacket 011",
+    "description": "A classic gray 夹克 made with linen fabric, designed for everyday wear.",
+    "category": "Jackets",
+    "brand": "Demo Brand",
+    "price": "118.42",
+    "currency": "USD",
+    "stock": 35,
+    "attributes": {
+      "color": "gray",
+      "sizes": [
+        "XL"
+      ],
+      "material": "linen",
+      "style": [
+        "classic"
+      ],
+      "name_zh": "灰色夹克（基础款）",
+      "description_zh": "这款灰色夹克采用亚麻材质，整体风格为经典，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "TSHIRT-DEMO-012",
+    "name": "Green Cotton T-Shirt 012",
+    "description": "A casual green T恤 made with cotton fabric, designed for everyday wear.",
+    "category": "T-Shirts",
+    "brand": "Demo Brand",
+    "price": "32.55",
+    "currency": "USD",
+    "stock": 50,
+    "attributes": {
+      "color": "green",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "cotton",
+      "style": [
+        "casual"
+      ],
+      "name_zh": "绿色T恤（宽松款）",
+      "description_zh": "这款绿色T恤采用棉材质，整体风格为休闲，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "JEANS-DEMO-013",
+    "name": "White Denim Jeans 013",
+    "description": "A minimalist white 牛仔裤 made with polyester fabric, designed for everyday wear.",
+    "category": "Jeans",
+    "brand": "Demo Brand",
+    "price": "72.68",
+    "currency": "USD",
+    "stock": 80,
+    "attributes": {
+      "color": "white",
+      "sizes": [
+        "34",
+        "36"
+      ],
+      "material": "polyester",
+      "style": [
+        "minimalist"
+      ],
+      "name_zh": "白色牛仔裤（经典款）",
+      "description_zh": "这款白色牛仔裤采用聚酯纤维材质，整体风格为简约，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": false
+  },
+  {
+    "sku": "HOODIE-DEMO-014",
+    "name": "Navy Pullover Hoodie 014",
+    "description": "A sporty navy 连帽衫 made with cotton fabric, designed for everyday wear.",
+    "category": "Hoodies",
+    "brand": "Demo Brand",
+    "price": "34.81",
+    "currency": "USD",
+    "stock": 0,
+    "attributes": {
+      "color": "navy",
+      "sizes": [
+        "L",
+        "XL"
+      ],
+      "material": "cotton",
+      "style": [
+        "sporty"
+      ],
+      "name_zh": "藏青色连帽衫（休闲款）",
+      "description_zh": "这款藏青色连帽衫采用棉材质，整体风格为运动，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "SHIRT-DEMO-015",
+    "name": "Black Casual Shirt 015",
+    "description": "A classic black 衬衫 made with polyester fabric, designed for everyday wear.",
+    "category": "Shirts",
+    "brand": "Demo Brand",
+    "price": "46.94",
+    "currency": "USD",
+    "stock": 5,
+    "attributes": {
+      "color": "black",
+      "sizes": [
+        "XL"
+      ],
+      "material": "polyester",
+      "style": [
+        "classic"
+      ],
+      "name_zh": "黑色衬衫（基础款）",
+      "description_zh": "这款黑色衬衫采用聚酯纤维材质，整体风格为经典，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "JACKET-DEMO-016",
+    "name": "Gray Casual Jacket 016",
+    "description": "A casual gray 夹克 made with cotton-blend fabric, designed for everyday wear.",
+    "category": "Jackets",
+    "brand": "Demo Brand",
+    "price": "64.07",
+    "currency": "USD",
+    "stock": 12,
+    "attributes": {
+      "color": "gray",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "cotton-blend",
+      "style": [
+        "casual"
+      ],
+      "name_zh": "灰色夹克（宽松款）",
+      "description_zh": "这款灰色夹克采用棉混纺材质，整体风格为休闲，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "TSHIRT-DEMO-017",
+    "name": "Green Cotton T-Shirt 017",
+    "description": "A minimalist green T恤 made with denim fabric, designed for everyday wear.",
+    "category": "T-Shirts",
+    "brand": "Demo Brand",
+    "price": "24.20",
+    "currency": "USD",
+    "stock": 24,
+    "attributes": {
+      "color": "green",
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "denim",
+      "style": [
+        "minimalist"
+      ],
+      "name_zh": "绿色T恤（经典款）",
+      "description_zh": "这款绿色T恤采用牛仔布材质，整体风格为简约，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "JEANS-DEMO-018",
+    "name": "White Denim Jeans 018",
+    "description": "A sporty white 牛仔裤 made with linen fabric, designed for everyday wear.",
+    "category": "Jeans",
+    "brand": "Demo Brand",
+    "price": "58.33",
+    "currency": "USD",
+    "stock": 35,
+    "attributes": {
+      "color": "white",
+      "sizes": [
+        "34",
+        "36"
+      ],
+      "material": "linen",
+      "style": [
+        "sporty"
+      ],
+      "name_zh": "白色牛仔裤（休闲款）",
+      "description_zh": "这款白色牛仔裤采用亚麻材质，整体风格为运动，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "HOODIE-DEMO-019",
+    "name": "Navy Pullover Hoodie 019",
+    "description": "A classic navy 连帽衫 made with cotton fabric, designed for everyday wear.",
+    "category": "Hoodies",
+    "brand": "Demo Brand",
+    "price": "25.46",
+    "currency": "USD",
+    "stock": 50,
+    "attributes": {
+      "color": "navy",
+      "sizes": [
+        "XL"
+      ],
+      "material": "cotton",
+      "style": [
+        "classic"
+      ],
+      "name_zh": "藏青色连帽衫（基础款）",
+      "description_zh": "这款藏青色连帽衫采用棉材质，整体风格为经典，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "SHIRT-DEMO-020",
+    "name": "Black Casual Shirt 020",
+    "description": "A casual black 衬衫 made with polyester fabric, designed for everyday wear.",
+    "category": "Shirts",
+    "brand": "Demo Brand",
+    "price": "42.59",
+    "currency": "USD",
+    "stock": 80,
+    "attributes": {
+      "color": "black",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "polyester",
+      "style": [
+        "casual"
+      ],
+      "name_zh": "黑色衬衫（宽松款）",
+      "description_zh": "这款黑色衬衫采用聚酯纤维材质，整体风格为休闲，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "JACKET-DEMO-021",
+    "name": "Gray Casual Jacket 021",
+    "description": "A minimalist gray 夹克 made with cotton fabric, designed for everyday wear.",
+    "category": "Jackets",
+    "brand": "Demo Brand",
+    "price": "99.72",
+    "currency": "USD",
+    "stock": 0,
+    "attributes": {
+      "color": "gray",
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "cotton",
+      "style": [
+        "minimalist"
+      ],
+      "name_zh": "灰色夹克（经典款）",
+      "description_zh": "这款灰色夹克采用棉材质，整体风格为简约，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "TSHIRT-DEMO-022",
+    "name": "Green Cotton T-Shirt 022",
+    "description": "A sporty green T恤 made with polyester fabric, designed for everyday wear.",
+    "category": "T-Shirts",
+    "brand": "Demo Brand",
+    "price": "15.85",
+    "currency": "USD",
+    "stock": 5,
+    "attributes": {
+      "color": "green",
+      "sizes": [
+        "L",
+        "XL"
+      ],
+      "material": "polyester",
+      "style": [
+        "sporty"
+      ],
+      "name_zh": "绿色T恤（休闲款）",
+      "description_zh": "这款绿色T恤采用聚酯纤维材质，整体风格为运动，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "JEANS-DEMO-023",
+    "name": "White Denim Jeans 023",
+    "description": "A classic white 牛仔裤 made with cotton-blend fabric, designed for everyday wear.",
+    "category": "Jeans",
+    "brand": "Demo Brand",
+    "price": "43.98",
+    "currency": "USD",
+    "stock": 12,
+    "attributes": {
+      "color": "white",
+      "sizes": [
+        "34",
+        "36"
+      ],
+      "material": "cotton-blend",
+      "style": [
+        "classic"
+      ],
+      "name_zh": "白色牛仔裤（基础款）",
+      "description_zh": "这款白色牛仔裤采用棉混纺材质，整体风格为经典，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "HOODIE-DEMO-024",
+    "name": "Navy Pullover Hoodie 024",
+    "description": "A casual navy 连帽衫 made with denim fabric, designed for everyday wear.",
+    "category": "Hoodies",
+    "brand": "Demo Brand",
+    "price": "61.11",
+    "currency": "USD",
+    "stock": 24,
+    "attributes": {
+      "color": "navy",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "denim",
+      "style": [
+        "casual"
+      ],
+      "name_zh": "藏青色连帽衫（宽松款）",
+      "description_zh": "这款藏青色连帽衫采用牛仔布材质，整体风格为休闲，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "SHIRT-DEMO-025",
+    "name": "Black Casual Shirt 025",
+    "description": "A minimalist black 衬衫 made with linen fabric, designed for everyday wear.",
+    "category": "Shirts",
+    "brand": "Demo Brand",
+    "price": "38.24",
+    "currency": "USD",
+    "stock": 35,
+    "attributes": {
+      "color": "black",
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "linen",
+      "style": [
+        "minimalist"
+      ],
+      "name_zh": "黑色衬衫（经典款）",
+      "description_zh": "这款黑色衬衫采用亚麻材质，整体风格为简约，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "JACKET-DEMO-026",
+    "name": "Gray Casual Jacket 026",
+    "description": "A sporty gray 夹克 made with cotton fabric, designed for everyday wear.",
+    "category": "Jackets",
+    "brand": "Demo Brand",
+    "price": "45.37",
+    "currency": "USD",
+    "stock": 50,
+    "attributes": {
+      "color": "gray",
+      "sizes": [
+        "L",
+        "XL"
+      ],
+      "material": "cotton",
+      "style": [
+        "sporty"
+      ],
+      "name_zh": "灰色夹克（休闲款）",
+      "description_zh": "这款灰色夹克采用棉材质，整体风格为运动，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": false
+  },
+  {
+    "sku": "TSHIRT-DEMO-027",
+    "name": "Green Cotton T-Shirt 027",
+    "description": "A classic green T恤 made with polyester fabric, designed for everyday wear.",
+    "category": "T-Shirts",
+    "brand": "Demo Brand",
+    "price": "29.50",
+    "currency": "USD",
+    "stock": 80,
+    "attributes": {
+      "color": "green",
+      "sizes": [
+        "XL"
+      ],
+      "material": "polyester",
+      "style": [
+        "classic"
+      ],
+      "name_zh": "绿色T恤（基础款）",
+      "description_zh": "这款绿色T恤采用聚酯纤维材质，整体风格为经典，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "JEANS-DEMO-028",
+    "name": "White Denim Jeans 028",
+    "description": "A casual white 牛仔裤 made with cotton fabric, designed for everyday wear.",
+    "category": "Jeans",
+    "brand": "Demo Brand",
+    "price": "79.63",
+    "currency": "USD",
+    "stock": 0,
+    "attributes": {
+      "color": "white",
+      "sizes": [
+        "34",
+        "36"
+      ],
+      "material": "cotton",
+      "style": [
+        "casual"
+      ],
+      "name_zh": "白色牛仔裤（宽松款）",
+      "description_zh": "这款白色牛仔裤采用棉材质，整体风格为休闲，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "HOODIE-DEMO-029",
+    "name": "Navy Pullover Hoodie 029",
+    "description": "A minimalist navy 连帽衫 made with polyester fabric, designed for everyday wear.",
+    "category": "Hoodies",
+    "brand": "Demo Brand",
+    "price": "51.76",
+    "currency": "USD",
+    "stock": 5,
+    "attributes": {
+      "color": "navy",
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "polyester",
+      "style": [
+        "minimalist"
+      ],
+      "name_zh": "藏青色连帽衫（经典款）",
+      "description_zh": "这款藏青色连帽衫采用聚酯纤维材质，整体风格为简约，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "SHIRT-DEMO-030",
+    "name": "Black Casual Shirt 030",
+    "description": "A sporty black 衬衫 made with cotton-blend fabric, designed for everyday wear.",
+    "category": "Shirts",
+    "brand": "Demo Brand",
+    "price": "33.89",
+    "currency": "USD",
+    "stock": 12,
+    "attributes": {
+      "color": "black",
+      "sizes": [
+        "L",
+        "XL"
+      ],
+      "material": "cotton-blend",
+      "style": [
+        "sporty"
+      ],
+      "name_zh": "黑色衬衫（休闲款）",
+      "description_zh": "这款黑色衬衫采用棉混纺材质，整体风格为运动，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "JACKET-DEMO-031",
+    "name": "Gray Casual Jacket 031",
+    "description": "A classic gray 夹克 made with denim fabric, designed for everyday wear.",
+    "category": "Jackets",
+    "brand": "Demo Brand",
+    "price": "81.02",
+    "currency": "USD",
+    "stock": 24,
+    "attributes": {
+      "color": "gray",
+      "sizes": [
+        "XL"
+      ],
+      "material": "denim",
+      "style": [
+        "classic"
+      ],
+      "name_zh": "灰色夹克（基础款）",
+      "description_zh": "这款灰色夹克采用牛仔布材质，整体风格为经典，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "TSHIRT-DEMO-032",
+    "name": "Green Cotton T-Shirt 032",
+    "description": "A casual green T恤 made with linen fabric, designed for everyday wear.",
+    "category": "T-Shirts",
+    "brand": "Demo Brand",
+    "price": "21.15",
+    "currency": "USD",
+    "stock": 35,
+    "attributes": {
+      "color": "green",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "linen",
+      "style": [
+        "casual"
+      ],
+      "name_zh": "绿色T恤（宽松款）",
+      "description_zh": "这款绿色T恤采用亚麻材质，整体风格为休闲，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "JEANS-DEMO-033",
+    "name": "White Denim Jeans 033",
+    "description": "A minimalist white 牛仔裤 made with cotton fabric, designed for everyday wear.",
+    "category": "Jeans",
+    "brand": "Demo Brand",
+    "price": "65.28",
+    "currency": "USD",
+    "stock": 50,
+    "attributes": {
+      "color": "white",
+      "sizes": [
+        "34",
+        "36"
+      ],
+      "material": "cotton",
+      "style": [
+        "minimalist"
+      ],
+      "name_zh": "白色牛仔裤（经典款）",
+      "description_zh": "这款白色牛仔裤采用棉材质，整体风格为简约，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "HOODIE-DEMO-034",
+    "name": "Navy Pullover Hoodie 034",
+    "description": "A sporty navy 连帽衫 made with polyester fabric, designed for everyday wear.",
+    "category": "Hoodies",
+    "brand": "Demo Brand",
+    "price": "42.41",
+    "currency": "USD",
+    "stock": 80,
+    "attributes": {
+      "color": "navy",
+      "sizes": [
+        "L",
+        "XL"
+      ],
+      "material": "polyester",
+      "style": [
+        "sporty"
+      ],
+      "name_zh": "藏青色连帽衫（休闲款）",
+      "description_zh": "这款藏青色连帽衫采用聚酯纤维材质，整体风格为运动，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "SHIRT-DEMO-035",
+    "name": "Black Casual Shirt 035",
+    "description": "A classic black 衬衫 made with cotton fabric, designed for everyday wear.",
+    "category": "Shirts",
+    "brand": "Demo Brand",
+    "price": "29.54",
+    "currency": "USD",
+    "stock": 0,
+    "attributes": {
+      "color": "black",
+      "sizes": [
+        "XL"
+      ],
+      "material": "cotton",
+      "style": [
+        "classic"
+      ],
+      "name_zh": "黑色衬衫（基础款）",
+      "description_zh": "这款黑色衬衫采用棉材质，整体风格为经典，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "JACKET-DEMO-036",
+    "name": "Gray Casual Jacket 036",
+    "description": "A casual gray 夹克 made with polyester fabric, designed for everyday wear.",
+    "category": "Jackets",
+    "brand": "Demo Brand",
+    "price": "116.67",
+    "currency": "USD",
+    "stock": 5,
+    "attributes": {
+      "color": "gray",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "polyester",
+      "style": [
+        "casual"
+      ],
+      "name_zh": "灰色夹克（宽松款）",
+      "description_zh": "这款灰色夹克采用聚酯纤维材质，整体风格为休闲，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "TSHIRT-DEMO-037",
+    "name": "Green Cotton T-Shirt 037",
+    "description": "A minimalist green T恤 made with cotton-blend fabric, designed for everyday wear.",
+    "category": "T-Shirts",
+    "brand": "Demo Brand",
+    "price": "34.80",
+    "currency": "USD",
+    "stock": 12,
+    "attributes": {
+      "color": "green",
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "cotton-blend",
+      "style": [
+        "minimalist"
+      ],
+      "name_zh": "绿色T恤（经典款）",
+      "description_zh": "这款绿色T恤采用棉混纺材质，整体风格为简约，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "JEANS-DEMO-038",
+    "name": "White Denim Jeans 038",
+    "description": "A sporty white 牛仔裤 made with denim fabric, designed for everyday wear.",
+    "category": "Jeans",
+    "brand": "Demo Brand",
+    "price": "50.93",
+    "currency": "USD",
+    "stock": 24,
+    "attributes": {
+      "color": "white",
+      "sizes": [
+        "34",
+        "36"
+      ],
+      "material": "denim",
+      "style": [
+        "sporty"
+      ],
+      "name_zh": "白色牛仔裤（休闲款）",
+      "description_zh": "这款白色牛仔裤采用牛仔布材质，整体风格为运动，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "HOODIE-DEMO-039",
+    "name": "Navy Pullover Hoodie 039",
+    "description": "A classic navy 连帽衫 made with linen fabric, designed for everyday wear.",
+    "category": "Hoodies",
+    "brand": "Demo Brand",
+    "price": "33.06",
+    "currency": "USD",
+    "stock": 35,
+    "attributes": {
+      "color": "navy",
+      "sizes": [
+        "XL"
+      ],
+      "material": "linen",
+      "style": [
+        "classic"
+      ],
+      "name_zh": "藏青色连帽衫（基础款）",
+      "description_zh": "这款藏青色连帽衫采用亚麻材质，整体风格为经典，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": false
+  },
+  {
+    "sku": "SHIRT-DEMO-040",
+    "name": "Black Casual Shirt 040",
+    "description": "A casual black 衬衫 made with cotton fabric, designed for everyday wear.",
+    "category": "Shirts",
+    "brand": "Demo Brand",
+    "price": "25.19",
+    "currency": "USD",
+    "stock": 50,
+    "attributes": {
+      "color": "black",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "cotton",
+      "style": [
+        "casual"
+      ],
+      "name_zh": "黑色衬衫（宽松款）",
+      "description_zh": "这款黑色衬衫采用棉材质，整体风格为休闲，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "JACKET-DEMO-041",
+    "name": "Gray Casual Jacket 041",
+    "description": "A minimalist gray 夹克 made with polyester fabric, designed for everyday wear.",
+    "category": "Jackets",
+    "brand": "Demo Brand",
+    "price": "62.32",
+    "currency": "USD",
+    "stock": 80,
+    "attributes": {
+      "color": "gray",
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "polyester",
+      "style": [
+        "minimalist"
+      ],
+      "name_zh": "灰色夹克（经典款）",
+      "description_zh": "这款灰色夹克采用聚酯纤维材质，整体风格为简约，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "TSHIRT-DEMO-042",
+    "name": "Green Cotton T-Shirt 042",
+    "description": "A sporty green T恤 made with cotton fabric, designed for everyday wear.",
+    "category": "T-Shirts",
+    "brand": "Demo Brand",
+    "price": "26.45",
+    "currency": "USD",
+    "stock": 0,
+    "attributes": {
+      "color": "green",
+      "sizes": [
+        "L",
+        "XL"
+      ],
+      "material": "cotton",
+      "style": [
+        "sporty"
+      ],
+      "name_zh": "绿色T恤（休闲款）",
+      "description_zh": "这款绿色T恤采用棉材质，整体风格为运动，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "JEANS-DEMO-043",
+    "name": "White Denim Jeans 043",
+    "description": "A classic white 牛仔裤 made with polyester fabric, designed for everyday wear.",
+    "category": "Jeans",
+    "brand": "Demo Brand",
+    "price": "36.58",
+    "currency": "USD",
+    "stock": 5,
+    "attributes": {
+      "color": "white",
+      "sizes": [
+        "34",
+        "36"
+      ],
+      "material": "polyester",
+      "style": [
+        "classic"
+      ],
+      "name_zh": "白色牛仔裤（基础款）",
+      "description_zh": "这款白色牛仔裤采用聚酯纤维材质，整体风格为经典，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "HOODIE-DEMO-044",
+    "name": "Navy Pullover Hoodie 044",
+    "description": "A casual navy 连帽衫 made with cotton-blend fabric, designed for everyday wear.",
+    "category": "Hoodies",
+    "brand": "Demo Brand",
+    "price": "68.71",
+    "currency": "USD",
+    "stock": 12,
+    "attributes": {
+      "color": "navy",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "cotton-blend",
+      "style": [
+        "casual"
+      ],
+      "name_zh": "藏青色连帽衫（宽松款）",
+      "description_zh": "这款藏青色连帽衫采用棉混纺材质，整体风格为休闲，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "SHIRT-DEMO-045",
+    "name": "Black Casual Shirt 045",
+    "description": "A minimalist black 衬衫 made with denim fabric, designed for everyday wear.",
+    "category": "Shirts",
+    "brand": "Demo Brand",
+    "price": "20.84",
+    "currency": "USD",
+    "stock": 24,
+    "attributes": {
+      "color": "black",
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "denim",
+      "style": [
+        "minimalist"
+      ],
+      "name_zh": "黑色衬衫（经典款）",
+      "description_zh": "这款黑色衬衫采用牛仔布材质，整体风格为简约，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "JACKET-DEMO-046",
+    "name": "Gray Casual Jacket 046",
+    "description": "A sporty gray 夹克 made with linen fabric, designed for everyday wear.",
+    "category": "Jackets",
+    "brand": "Demo Brand",
+    "price": "97.97",
+    "currency": "USD",
+    "stock": 35,
+    "attributes": {
+      "color": "gray",
+      "sizes": [
+        "L",
+        "XL"
+      ],
+      "material": "linen",
+      "style": [
+        "sporty"
+      ],
+      "name_zh": "灰色夹克（休闲款）",
+      "description_zh": "这款灰色夹克采用亚麻材质，整体风格为运动，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "TSHIRT-DEMO-047",
+    "name": "Green Cotton T-Shirt 047",
+    "description": "A classic green T恤 made with cotton fabric, designed for everyday wear.",
+    "category": "T-Shirts",
+    "brand": "Demo Brand",
+    "price": "18.10",
+    "currency": "USD",
+    "stock": 50,
+    "attributes": {
+      "color": "green",
+      "sizes": [
+        "XL"
+      ],
+      "material": "cotton",
+      "style": [
+        "classic"
+      ],
+      "name_zh": "绿色T恤（基础款）",
+      "description_zh": "这款绿色T恤采用棉材质，整体风格为经典，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "JEANS-DEMO-048",
+    "name": "White Denim Jeans 048",
+    "description": "A casual white 牛仔裤 made with polyester fabric, designed for everyday wear.",
+    "category": "Jeans",
+    "brand": "Demo Brand",
+    "price": "72.23",
+    "currency": "USD",
+    "stock": 80,
+    "attributes": {
+      "color": "white",
+      "sizes": [
+        "34",
+        "36"
+      ],
+      "material": "polyester",
+      "style": [
+        "casual"
+      ],
+      "name_zh": "白色牛仔裤（宽松款）",
+      "description_zh": "这款白色牛仔裤采用聚酯纤维材质，整体风格为休闲，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "HOODIE-DEMO-049",
+    "name": "Navy Pullover Hoodie 049",
+    "description": "A minimalist navy 连帽衫 made with cotton fabric, designed for everyday wear.",
+    "category": "Hoodies",
+    "brand": "Demo Brand",
+    "price": "59.36",
+    "currency": "USD",
+    "stock": 0,
+    "attributes": {
+      "color": "navy",
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "cotton",
+      "style": [
+        "minimalist"
+      ],
+      "name_zh": "藏青色连帽衫（经典款）",
+      "description_zh": "这款藏青色连帽衫采用棉材质，整体风格为简约，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "SHIRT-DEMO-050",
+    "name": "Black Casual Shirt 050",
+    "description": "A sporty black 衬衫 made with polyester fabric, designed for everyday wear.",
+    "category": "Shirts",
+    "brand": "Demo Brand",
+    "price": "56.49",
+    "currency": "USD",
+    "stock": 5,
+    "attributes": {
+      "color": "black",
+      "sizes": [
+        "L",
+        "XL"
+      ],
+      "material": "polyester",
+      "style": [
+        "sporty"
+      ],
+      "name_zh": "黑色衬衫（休闲款）",
+      "description_zh": "这款黑色衬衫采用聚酯纤维材质，整体风格为运动，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "JACKET-DEMO-051",
+    "name": "Gray Casual Jacket 051",
+    "description": "A classic gray 夹克 made with cotton-blend fabric, designed for everyday wear.",
+    "category": "Jackets",
+    "brand": "Demo Brand",
+    "price": "43.62",
+    "currency": "USD",
+    "stock": 12,
+    "attributes": {
+      "color": "gray",
+      "sizes": [
+        "XL"
+      ],
+      "material": "cotton-blend",
+      "style": [
+        "classic"
+      ],
+      "name_zh": "灰色夹克（基础款）",
+      "description_zh": "这款灰色夹克采用棉混纺材质，整体风格为经典，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "TSHIRT-DEMO-052",
+    "name": "Green Cotton T-Shirt 052",
+    "description": "A casual green T恤 made with denim fabric, designed for everyday wear.",
+    "category": "T-Shirts",
+    "brand": "Demo Brand",
+    "price": "31.75",
+    "currency": "USD",
+    "stock": 24,
+    "attributes": {
+      "color": "green",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "denim",
+      "style": [
+        "casual"
+      ],
+      "name_zh": "绿色T恤（宽松款）",
+      "description_zh": "这款绿色T恤采用牛仔布材质，整体风格为休闲，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": false
+  },
+  {
+    "sku": "JEANS-DEMO-053",
+    "name": "White Denim Jeans 053",
+    "description": "A minimalist white 牛仔裤 made with linen fabric, designed for everyday wear.",
+    "category": "Jeans",
+    "brand": "Demo Brand",
+    "price": "57.88",
+    "currency": "USD",
+    "stock": 35,
+    "attributes": {
+      "color": "white",
+      "sizes": [
+        "34",
+        "36"
+      ],
+      "material": "linen",
+      "style": [
+        "minimalist"
+      ],
+      "name_zh": "白色牛仔裤（经典款）",
+      "description_zh": "这款白色牛仔裤采用亚麻材质，整体风格为简约，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "HOODIE-DEMO-054",
+    "name": "Navy Pullover Hoodie 054",
+    "description": "A sporty navy 连帽衫 made with cotton fabric, designed for everyday wear.",
+    "category": "Hoodies",
+    "brand": "Demo Brand",
+    "price": "50.01",
+    "currency": "USD",
+    "stock": 50,
+    "attributes": {
+      "color": "navy",
+      "sizes": [
+        "L",
+        "XL"
+      ],
+      "material": "cotton",
+      "style": [
+        "sporty"
+      ],
+      "name_zh": "藏青色连帽衫（休闲款）",
+      "description_zh": "这款藏青色连帽衫采用棉材质，整体风格为运动，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "SHIRT-DEMO-055",
+    "name": "Black Casual Shirt 055",
+    "description": "A classic black 衬衫 made with polyester fabric, designed for everyday wear.",
+    "category": "Shirts",
+    "brand": "Demo Brand",
+    "price": "52.14",
+    "currency": "USD",
+    "stock": 80,
+    "attributes": {
+      "color": "black",
+      "sizes": [
+        "XL"
+      ],
+      "material": "polyester",
+      "style": [
+        "classic"
+      ],
+      "name_zh": "黑色衬衫（基础款）",
+      "description_zh": "这款黑色衬衫采用聚酯纤维材质，整体风格为经典，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "JACKET-DEMO-056",
+    "name": "Gray Casual Jacket 056",
+    "description": "A casual gray 夹克 made with cotton fabric, designed for everyday wear.",
+    "category": "Jackets",
+    "brand": "Demo Brand",
+    "price": "79.27",
+    "currency": "USD",
+    "stock": 0,
+    "attributes": {
+      "color": "gray",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "cotton",
+      "style": [
+        "casual"
+      ],
+      "name_zh": "灰色夹克（宽松款）",
+      "description_zh": "这款灰色夹克采用棉材质，整体风格为休闲，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "TSHIRT-DEMO-057",
+    "name": "Green Cotton T-Shirt 057",
+    "description": "A minimalist green T恤 made with polyester fabric, designed for everyday wear.",
+    "category": "T-Shirts",
+    "brand": "Demo Brand",
+    "price": "23.40",
+    "currency": "USD",
+    "stock": 5,
+    "attributes": {
+      "color": "green",
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "polyester",
+      "style": [
+        "minimalist"
+      ],
+      "name_zh": "绿色T恤（经典款）",
+      "description_zh": "这款绿色T恤采用聚酯纤维材质，整体风格为简约，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "JEANS-DEMO-058",
+    "name": "White Denim Jeans 058",
+    "description": "A sporty white 牛仔裤 made with cotton-blend fabric, designed for everyday wear.",
+    "category": "Jeans",
+    "brand": "Demo Brand",
+    "price": "43.53",
+    "currency": "USD",
+    "stock": 12,
+    "attributes": {
+      "color": "white",
+      "sizes": [
+        "34",
+        "36"
+      ],
+      "material": "cotton-blend",
+      "style": [
+        "sporty"
+      ],
+      "name_zh": "白色牛仔裤（休闲款）",
+      "description_zh": "这款白色牛仔裤采用棉混纺材质，整体风格为运动，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "HOODIE-DEMO-059",
+    "name": "Navy Pullover Hoodie 059",
+    "description": "A classic navy 连帽衫 made with denim fabric, designed for everyday wear.",
+    "category": "Hoodies",
+    "brand": "Demo Brand",
+    "price": "40.66",
+    "currency": "USD",
+    "stock": 24,
+    "attributes": {
+      "color": "navy",
+      "sizes": [
+        "XL"
+      ],
+      "material": "denim",
+      "style": [
+        "classic"
+      ],
+      "name_zh": "藏青色连帽衫（基础款）",
+      "description_zh": "这款藏青色连帽衫采用牛仔布材质，整体风格为经典，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "sku": "SHIRT-DEMO-060",
+    "name": "Black Casual Shirt 060",
+    "description": "A casual black 衬衫 made with linen fabric, designed for everyday wear.",
+    "category": "Shirts",
+    "brand": "Demo Brand",
+    "price": "47.79",
+    "currency": "USD",
+    "stock": 35,
+    "attributes": {
+      "color": "black",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "linen",
+      "style": [
+        "casual"
+      ],
+      "name_zh": "黑色衬衫（宽松款）",
+      "description_zh": "这款黑色衬衫采用亚麻材质，整体风格为休闲，适合日常穿着。",
+      "synthetic_test_data": true
+    },
+    "image_url": null,
+    "is_active": true
+  }
+]
