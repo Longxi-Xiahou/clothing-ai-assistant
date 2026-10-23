@@ -1,0 +1,39 @@
+===== TIMESTAMP =====
+2026-10-22T03:25:48+00:00
+
+===== GIT STATUS =====
+?? .gitignore
+?? alembic.ini
+?? app/
+?? data/
+?? docker-compose.yml
+?? experiments/
+?? logs/
+?? migrations/
+?? scripts/
+?? tests/
+
+===== CURRENT COMMIT =====
+HEAD
+
+===== PROMPT SOURCE HASH =====
+059d4f5a5afda05d97202651b3cab1c375a11f2a6e8ab184e289412ed4fa6a07  app/services/intent_classifier.py
+
+===== ORIGINAL DATASET HASHES =====
+53d8dcba6f569f58c79d357f53b0b137ec65eb58346b3786b0adb3e548d4fa11  experiments/bilingual-blind-test-v1/cases/chinese_v1.jsonl
+fa5019191b7f956af498ec00783365e484dd69e454f76842f8c2bf5bf352d94e  experiments/bilingual-blind-test-v1/cases/english_v1.jsonl
+9e3eed7d739abcea4d7a7aebd8741dbe84f0e11babc913b89350538991e6e70d  experiments/bilingual-blind-test-v1/cases/blind_test_v1.jsonl
+
+===== V2 DIAGNOSTIC SUMMARY =====
+    For further information visit https://errors.pydantic.dev/2.14/v/value_error
+Raw: '{\n  "intent": "product_search",\n  "action": "modify_filters",\n  "category": "Hoodies",\n  "color": null,\n  "min_price": null,\n  "max_price": null,\n  "clear_filters": ["category"]\n}'
+[199/200] PASS EB014
+[200/200] PASS EB015
+
+===== DIAGNOSTIC SUMMARY =====
+Cases: 200
+Schema-valid outputs: 188
+Invalid outputs: 12
+Invalid error types: {'ValidationError': 12}
+Field mismatch counts: {'min_price': 1, 'max_price': 5, 'color': 2, 'action': 8, 'clear_filters': 3, 'category': 2, 'intent': 1}
+Saved: /home/longxi/workspace/projects/clothing-ai-assistant/experiments/bilingual-blind-test-v1/reports/diagnostics_v1.jsonl

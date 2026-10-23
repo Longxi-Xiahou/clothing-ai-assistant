@@ -32,3 +32,9 @@ data/processed/
 # Additional temporary backup files
 *.bak_*
 *.backup_*
+
+# Local experiment logs and temporary artifacts
+experiments/**/*.log
+experiments/**/pre-change-backup/
+experiments/**/__pycache__/
+experiments/**/*.pyc
