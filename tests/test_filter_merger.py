@@ -91,7 +91,7 @@ def test_clear_budget_preserves_category_and_color():
     assert result["max_price"] is None
 
 
-def test_general_intent_clears_search_filters():
+def test_general_intent_preserves_search_filters():
     previous = {
         "category": "T-Shirts",
         "color": "black",
@@ -102,8 +102,7 @@ def test_general_intent_clears_search_filters():
 
     result = merge_filters(previous, intent)
 
-    assert all(value is None for value in result.values())
-
+    assert result == previous
 
 def test_clear_color_and_update_budget():
     previous = {

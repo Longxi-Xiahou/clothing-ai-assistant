@@ -15,13 +15,10 @@ def merge_filters(
 
     previous = previous_filters or {}
 
-    if intent.intent == "general" or intent.action == "new_search":
+    if intent.action == "new_search":
         merged = {field: None for field in FILTER_FIELDS}
     else:
-        merged = {
-            field: previous.get(field)
-            for field in FILTER_FIELDS
-        }
+        merged = {field: previous.get(field) for field in FILTER_FIELDS}
 
     for field in intent.clear_filters:
         merged[field] = None
