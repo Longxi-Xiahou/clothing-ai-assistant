@@ -590,396 +590,113 @@ def test_general_chat_preserves_existing_filters(client, monkeypatch):
     finally:
         generator.close()
 
-def test_general_chat_preserves_existing_filters(client, monkeypatch):
-    # First turn: establish saved product filters.
+
+@pytest.mark.parametrize(
+    ("message", "expected_reply"),
+    [
+        (
+            "价格条件冲突，请帮我确认。",
+            "你的价格条件存在冲突。你希望设置的最低价和最高价分别是多少？",
+        ),
+        (
+            "The price filters conflict; please clarify.",
+            "Your price constraints conflict. What minimum and maximum price would you like?",
+        ),
+    ],
+)
+def test_classifier_clarification_uses_message_language(
+    client, monkeypatch, message, expected_reply
+):
+    classifier = AsyncMock(
+        return_value=ChatIntent(
+            intent="product_search",
+            action="new_search",
+            needs_clarification=True,
+            clarification_reason="conflicting_price_constraints",
+        )
+    )
+    reply_generator = AsyncMock()
+    repository_class = MagicMock()
+
+    monkeypatch.setattr("app.api.chat.classify_intent", classifier)
+    monkeypatch.setattr("app.api.chat.generate_reply", reply_generator)
+    monkeypatch.setattr(
+        "app.api.chat.MySQLProductRepository", repository_class
+    )
+
+    response = client.post("/chat", json={"message": message})
+
+    assert response.status_code == 200
+    body = response.json()
+    assert body["needs_clarification"] is True
+    assert body["reply"] == expected_reply
+    reply_generator.assert_not_awaited()
+    repository_class.assert_not_called()
+
+
+@pytest.mark.parametrize(
+    ("message", "expected_reply"),
+    [
+        (
+            "把最低价提高到 100 美元。",
+            "这次价格调整与之前的价格条件冲突。请确认你希望的最低价和最高价。",
+        ),
+        (
+            "Raise the minimum price to $100.",
+            "This price change conflicts with your existing filters. What minimum and maximum price would you like?",
+        ),
+    ],
+)
+def test_merged_filter_conflict_uses_message_language(
+    client, monkeypatch, message, expected_reply
+):
     initial_classifier = AsyncMock(
         return_value=ChatIntent(
             intent="product_search",
             action="new_search",
-            category="T-Shirts",
-            color="black",
-            max_price=Decimal("30"),
+            category="Hoodies",
+            min_price=Decimal("20"),
+            max_price=Decimal("80"),
         )
     )
-    initial_reply = AsyncMock(return_value="Here is a black T-shirt.")
-
+    conflict_classifier = AsyncMock(
+        return_value=ChatIntent(
+            intent="product_search",
+            action="modify_filters",
+            min_price=Decimal("100"),
+        )
+    )
+    reply_generator = AsyncMock(return_value="Here are some hoodies.")
     repository = MagicMock()
     repository.search.return_value = [make_product()]
     repository_class = MagicMock(return_value=repository)
 
-    monkeypatch.setattr(
-        "app.api.chat.classify_intent", initial_classifier
-    )
-    monkeypatch.setattr(
-        "app.api.chat.generate_reply", initial_reply
-    )
+    monkeypatch.setattr("app.api.chat.classify_intent", initial_classifier)
+    monkeypatch.setattr("app.api.chat.generate_reply", reply_generator)
     monkeypatch.setattr(
         "app.api.chat.MySQLProductRepository", repository_class
     )
 
     first_response = client.post(
         "/chat",
-        json={"message": "Find black T-shirts under $30."},
+        json={"message": "Find hoodies between $20 and $80."},
     )
-
     assert first_response.status_code == 200
     conversation_id = first_response.json()["conversation_id"]
 
-    # Second turn: ordinary chat in the same conversation.
-    general_classifier = AsyncMock(
-        return_value=ChatIntent(
-            intent="general",
-            action="general",
-        )
-    )
-    general_reply = AsyncMock(
-        return_value="White sneakers would pair well with black jeans."
-    )
-
-    monkeypatch.setattr(
-        "app.api.chat.classify_intent", general_classifier
-    )
-    monkeypatch.setattr(
-        "app.api.chat.generate_reply", general_reply
-    )
-
-    # Ignore calls from the initial product search.
     repository_class.reset_mock()
+    reply_generator.reset_mock()
+    monkeypatch.setattr("app.api.chat.classify_intent", conflict_classifier)
 
-    second_response = client.post(
+    response = client.post(
         "/chat",
-        json={
-            "message": "What shoes would go with them?",
-            "conversation_id": conversation_id,
-        },
+        json={"message": message, "conversation_id": conversation_id},
     )
 
-    assert second_response.status_code == 200
-    assert second_response.json()["reply"] == (
-        "White sneakers would pair well with black jeans."
-    )
-
-    general_classifier.assert_awaited_once()
-    assert general_classifier.await_args.kwargs["previous_filters"] == {
-        "category": "T-Shirts",
-        "color": "black",
-        "min_price": None,
-        "max_price": "30",
-    }
+    assert response.status_code == 200
+    body = response.json()
+    assert body["needs_clarification"] is True
+    assert body["clarification_reason"] == "conflicting_price_constraints"
+    assert body["reply"] == expected_reply
+    reply_generator.assert_not_awaited()
     repository_class.assert_not_called()
-
-    # Verify the persisted filters after the general chat turn.
-    override = app.dependency_overrides[get_db]
-    generator = override()
-    db = next(generator)
-    try:
-        conversation = db.scalar(
-            select(Conversation).where(
-                Conversation.public_id == conversation_id
-            )
-        )
-        assert conversation is not None
-        assert conversation.filters == {
-            "category": "T-Shirts",
-            "color": "black",
-            "min_price": None,
-            "max_price": "30",
-        }
-    finally:
-        generator.close()
-
-
-def test_general_chat_preserves_existing_filters(client, monkeypatch):
-    # First turn: establish saved product filters.
-    initial_classifier = AsyncMock(
-        return_value=ChatIntent(
-            intent="product_search",
-            action="new_search",
-            category="T-Shirts",
-            color="black",
-            max_price=Decimal("30"),
-        )
-    )
-    initial_reply = AsyncMock(return_value="Here is a black T-shirt.")
-
-    repository = MagicMock()
-    repository.search.return_value = [make_product()]
-    repository_class = MagicMock(return_value=repository)
-
-    monkeypatch.setattr(
-        "app.api.chat.classify_intent", initial_classifier
-    )
-    monkeypatch.setattr(
-        "app.api.chat.generate_reply", initial_reply
-    )
-    monkeypatch.setattr(
-        "app.api.chat.MySQLProductRepository", repository_class
-    )
-
-    first_response = client.post(
-        "/chat",
-        json={"message": "Find black T-shirts under $30."},
-    )
-
-    assert first_response.status_code == 200
-    conversation_id = first_response.json()["conversation_id"]
-
-    # Second turn: ordinary chat in the same conversation.
-    general_classifier = AsyncMock(
-        return_value=ChatIntent(
-            intent="general",
-            action="general",
-        )
-    )
-    general_reply = AsyncMock(
-        return_value="White sneakers would pair well with black jeans."
-    )
-
-    monkeypatch.setattr(
-        "app.api.chat.classify_intent", general_classifier
-    )
-    monkeypatch.setattr(
-        "app.api.chat.generate_reply", general_reply
-    )
-
-    # Ignore calls from the initial product search.
-    repository_class.reset_mock()
-
-    second_response = client.post(
-        "/chat",
-        json={
-            "message": "What shoes would go with them?",
-            "conversation_id": conversation_id,
-        },
-    )
-
-    assert second_response.status_code == 200
-    assert second_response.json()["reply"] == (
-        "White sneakers would pair well with black jeans."
-    )
-
-    general_classifier.assert_awaited_once()
-    assert general_classifier.await_args.kwargs["previous_filters"] == {
-        "category": "T-Shirts",
-        "color": "black",
-        "min_price": None,
-        "max_price": "30",
-    }
-    repository_class.assert_not_called()
-
-    # Verify the persisted filters after the general chat turn.
-    override = app.dependency_overrides[get_db]
-    generator = override()
-    db = next(generator)
-    try:
-        conversation = db.scalar(
-            select(Conversation).where(
-                Conversation.public_id == conversation_id
-            )
-        )
-        assert conversation is not None
-        assert conversation.filters == {
-            "category": "T-Shirts",
-            "color": "black",
-            "min_price": None,
-            "max_price": "30",
-        }
-    finally:
-        generator.close()
-
-def test_general_chat_preserves_existing_filters(client, monkeypatch):
-    # First turn: establish saved product filters.
-    initial_classifier = AsyncMock(
-        return_value=ChatIntent(
-            intent="product_search",
-            action="new_search",
-            category="T-Shirts",
-            color="black",
-            max_price=Decimal("30"),
-        )
-    )
-    initial_reply = AsyncMock(return_value="Here is a black T-shirt.")
-
-    repository = MagicMock()
-    repository.search.return_value = [make_product()]
-    repository_class = MagicMock(return_value=repository)
-
-    monkeypatch.setattr(
-        "app.api.chat.classify_intent", initial_classifier
-    )
-    monkeypatch.setattr(
-        "app.api.chat.generate_reply", initial_reply
-    )
-    monkeypatch.setattr(
-        "app.api.chat.MySQLProductRepository", repository_class
-    )
-
-    first_response = client.post(
-        "/chat",
-        json={"message": "Find black T-shirts under $30."},
-    )
-
-    assert first_response.status_code == 200
-    conversation_id = first_response.json()["conversation_id"]
-
-    # Second turn: ordinary chat in the same conversation.
-    general_classifier = AsyncMock(
-        return_value=ChatIntent(
-            intent="general",
-            action="general",
-        )
-    )
-    general_reply = AsyncMock(
-        return_value="White sneakers would pair well with black jeans."
-    )
-
-    monkeypatch.setattr(
-        "app.api.chat.classify_intent", general_classifier
-    )
-    monkeypatch.setattr(
-        "app.api.chat.generate_reply", general_reply
-    )
-
-    # Ignore calls from the initial product search.
-    repository_class.reset_mock()
-
-    second_response = client.post(
-        "/chat",
-        json={
-            "message": "What shoes would go with them?",
-            "conversation_id": conversation_id,
-        },
-    )
-
-    assert second_response.status_code == 200
-    assert second_response.json()["reply"] == (
-        "White sneakers would pair well with black jeans."
-    )
-
-    general_classifier.assert_awaited_once()
-    assert general_classifier.await_args.kwargs["previous_filters"] == {
-        "category": "T-Shirts",
-        "color": "black",
-        "min_price": None,
-        "max_price": "30",
-    }
-    repository_class.assert_not_called()
-
-    # Verify the persisted filters after the general chat turn.
-    override = app.dependency_overrides[get_db]
-    generator = override()
-    db = next(generator)
-    try:
-        conversation = db.scalar(
-            select(Conversation).where(
-                Conversation.public_id == conversation_id
-            )
-        )
-        assert conversation is not None
-        assert conversation.filters == {
-            "category": "T-Shirts",
-            "color": "black",
-            "min_price": None,
-            "max_price": "30",
-        }
-    finally:
-        generator.close()
-
-
-def test_general_chat_preserves_existing_filters(client, monkeypatch):
-    # First turn: establish saved product filters.
-    initial_classifier = AsyncMock(
-        return_value=ChatIntent(
-            intent="product_search",
-            action="new_search",
-            category="T-Shirts",
-            color="black",
-            max_price=Decimal("30"),
-        )
-    )
-    initial_reply = AsyncMock(return_value="Here is a black T-shirt.")
-
-    repository = MagicMock()
-    repository.search.return_value = [make_product()]
-    repository_class = MagicMock(return_value=repository)
-
-    monkeypatch.setattr(
-        "app.api.chat.classify_intent", initial_classifier
-    )
-    monkeypatch.setattr(
-        "app.api.chat.generate_reply", initial_reply
-    )
-    monkeypatch.setattr(
-        "app.api.chat.MySQLProductRepository", repository_class
-    )
-
-    first_response = client.post(
-        "/chat",
-        json={"message": "Find black T-shirts under $30."},
-    )
-
-    assert first_response.status_code == 200
-    conversation_id = first_response.json()["conversation_id"]
-
-    # Second turn: ordinary chat in the same conversation.
-    general_classifier = AsyncMock(
-        return_value=ChatIntent(
-            intent="general",
-            action="general",
-        )
-    )
-    general_reply = AsyncMock(
-        return_value="White sneakers would pair well with black jeans."
-    )
-
-    monkeypatch.setattr(
-        "app.api.chat.classify_intent", general_classifier
-    )
-    monkeypatch.setattr(
-        "app.api.chat.generate_reply", general_reply
-    )
-
-    # Ignore calls from the initial product search.
-    repository_class.reset_mock()
-
-    second_response = client.post(
-        "/chat",
-        json={
-            "message": "What shoes would go with them?",
-            "conversation_id": conversation_id,
-        },
-    )
-
-    assert second_response.status_code == 200
-    assert second_response.json()["reply"] == (
-        "White sneakers would pair well with black jeans."
-    )
-
-    general_classifier.assert_awaited_once()
-    assert general_classifier.await_args.kwargs["previous_filters"] == {
-        "category": "T-Shirts",
-        "color": "black",
-        "min_price": None,
-        "max_price": "30",
-    }
-    repository_class.assert_not_called()
-
-    # Verify the persisted filters after the general chat turn.
-    override = app.dependency_overrides[get_db]
-    generator = override()
-    db = next(generator)
-    try:
-        conversation = db.scalar(
-            select(Conversation).where(
-                Conversation.public_id == conversation_id
-            )
-        )
-        assert conversation is not None
-        assert conversation.filters == {
-            "category": "T-Shirts",
-            "color": "black",
-            "min_price": None,
-            "max_price": "30",
-        }
-    finally:
-        generator.close()

@@ -143,7 +143,7 @@ async def chat(
         if intent.needs_clarification:
             reply = (
                 "你的价格条件存在冲突。你希望设置的最低价和最高价分别是多少？"
-                if any("\\u4e00" <= char <= "\\u9fff" for char in payload.message)
+                if any("\u4e00" <= char <= "\u9fff" for char in payload.message)
                 else "Your price constraints conflict. What minimum and maximum price would you like?"
             )
 
@@ -180,7 +180,7 @@ async def chat(
         except ValueError:
             reply = (
                 "这次价格调整与之前的价格条件冲突。请确认你希望的最低价和最高价。"
-                if any("\\u4e00" <= char <= "\\u9fff" for char in payload.message)
+                if any("\u4e00" <= char <= "\u9fff" for char in payload.message)
                 else "This price change conflicts with your existing filters. What minimum and maximum price would you like?"
             )
 
